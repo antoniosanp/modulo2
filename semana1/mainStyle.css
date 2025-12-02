@@ -1,4 +1,60 @@
+body{
+    margin-left: 456px;
+    margin-right: 456px;
+    padding-bottom: 154px;
+}
 nav *{
     display: flex;
+    justify-content: right;
+    gap: 24px;
     
 }
+
+nav li{
+    margin-right: 24px;
+}
+
+section{
+    text-align: justify;
+}
+
+form {
+    border: 1px solid grey;
+    padding: 24px;
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+form > * {
+    margin: 0; 
+}
+
+
+.divDatos {
+    display: flex;
+    gap: 24px;
+}
+
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 600;
+}
+
+
+textarea {
+    margin-top: 6px;
+    resize: vertical; 
+}
+
+
+.btnEnviar {
+    align-self: flex-end;
+    padding: 8px 18px;
+}
+
