@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Mi Portafolio</h1>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="html/mascotas.html">Mis Mascotas</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="sobre-mi" class="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p id="texto-sobre-mi">Hola, soy un estudiante que está aprendiendo desarrollo web.</p>
+        <button id="btn-cambiar-texto">Cambiar descripción</button>
+    </section>
+
+    <section id="proyectos" class="proyectos">
+        <h2>Proyectos</h2>
+        <div class="grid-proyectos">
+            <div class="card">Proyecto 1</div>
+            <div class="card">Proyecto 2</div>
+            <div class="card">Proyecto 3</div>
+            <div class="card">Proyecto 4</div>
+        </div>
+    </section>
+
+    <section id="extra" class="extra">
+        <h2>Sección Extra</h2>
+        <button id="toggle-extra">Mostrar/Ocultar texto</button>
+        <p id="texto-extra" class="oculto">
+            Este texto puede ser ocultado o mostrado con JavaScript.
+        </p>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre">
+            <input type="email" placeholder="Tu email">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
