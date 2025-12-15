@@ -71,3 +71,51 @@ main {
 }
 
 /* Tablet*/
+
+@media (min-width: 789px){
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+    }
+    header > h1 {
+   
+    font-size: 60px;
+   
+    }
+    .iconosHeader div > img {
+        height: 48px;
+    }
+    .recomendacionVideo h2 {
+    font-size: 40px;
+    
+    }
+
+
+}
+
+@media (min-width: 1024px){
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        padding: 30px;
+    }
+       header > h1 {
+   
+    font-size: 80px;
+   
+    }
+    .iconosHeader div > img {
+        height: 64px;
+    }
+
+    .recomendacionVideo h2 {
+    font-size: 50px;
+    
+    }
+
+
+}
