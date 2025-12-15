@@ -1,0 +1,149 @@
+En CSS, Flexbox y Grid sirven para crear layouts, pero están pensados para problemas distintos. La clave está en una dimensión vs dos dimensiones.
+
+Diferencia principal (en una frase)
+
+Flexbox → controla el layout en una sola dimensión (fila o columna).
+
+Grid → controla el layout en dos dimensiones (filas y columnas a la vez).
+
+Flexbox 🧩
+Qué es
+
+Sistema de layout unidimensional. Organiza elementos en línea (horizontal o vertical).
+
+Cuándo usar Flexbox
+
+Usa flex cuando:
+
+El contenido fluye en una sola dirección
+
+No te importa alinear elementos entre filas distintas
+
+El tamaño de los elementos depende del contenido
+
+Ejemplos típicos:
+
+Menús de navegación
+
+Barras de botones
+
+Cards en una fila
+
+Alinear elementos (centrar vertical y horizontalmente)
+
+Componentes pequeños y reutilizables
+
+Qué hace muy bien Flex
+
+Distribuir espacio dinámicamente
+
+Reordenar elementos fácilmente (order)
+
+Alinear contenido de forma simple
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+Grid 🧱
+Qué es
+
+Sistema de layout bidimensional. Define estructura completa: filas y columnas.
+
+Cuándo usar Grid
+
+Usa grid cuando:
+
+Necesitas controlar filas y columnas al mismo tiempo
+
+El layout es estructural (página completa)
+
+Quieres que los elementos se alineen entre sí en ambos ejes
+
+Ejemplos típicos:
+
+Layout de una página (header, sidebar, main, footer)
+
+Dashboards
+
+Galerías complejas
+
+Diseños tipo revista
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+Qué puede hacer Grid que Flex NO puede ❌
+1. Control real de filas y columnas
+
+Flex no puede alinear elementos de distintas filas entre sí.
+
+grid-template-columns: repeat(3, 1fr);
+
+2. Posicionar elementos en coordenadas exactas
+
+Grid permite colocar elementos en celdas específicas:
+
+.item {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+
+
+👉 En Flex esto es imposible sin hacks.
+
+3. Superposición y layouts complejos
+
+Grid permite que elementos:
+
+Se solapen
+
+Ocupen múltiples filas/columnas
+
+No sigan el orden del DOM
+
+Qué puede hacer Flex que Grid no hace tan bien ⚠️
+1. Adaptarse mejor al contenido
+
+Flexbox:
+
+Ajusta tamaños automáticamente
+
+Es más natural para contenido variable
+
+Grid necesita más planificación.
+
+2. Componentes simples y lineales
+
+Para cosas pequeñas:
+
+Flex es más rápido
+
+Menos código
+
+Más intuitivo
+
+Resumen rápido 🧠
+Situación	Usa
+Menú, botones, toolbar	Flex
+Layout completo de página	Grid
+Una dirección (fila o columna)	Flex
+Filas + columnas	Grid
+Alinear contenido simple	Flex
+Layout complejo	Grid
+Regla práctica (la que usan los pros)
+
+Grid para el layout grande, Flex para los componentes internos
+
+Ejemplo:
+
+Página → Grid
+
+Header → Flex
+
+Cards → Flex

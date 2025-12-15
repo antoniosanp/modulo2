@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+header > h1 {
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.iconosHeader {
+    position: absolute;
+    right: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+/* RECOMENDACIÓN */
+.recomendacionVideo {
+    width: 100%;
+    height: 60vh;
+    background-image: url("assets/recomendacion.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+}
+
+.recomendacionVideo h2 {
+    font-size: 24px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+}
+
+.card {
+    border: 1px solid white;
+}
+
+.miniatura img {
+    width: 100%;
+    display: block;
+}
+
+.descripcionMiniatura {
+    padding: 8px;
+    text-align: justify;
+}
+
+/* Tablet*/
