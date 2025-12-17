@@ -104,6 +104,7 @@ body {
   margin-bottom: 2rem;
 }
 
+
 /* PHONES SECTION */
 .phones {
   background: linear-gradient(
@@ -123,6 +124,7 @@ body {
 
 .phones-text h2 {
   margin-top: 2rem;
+  color: white;
 }
 
 /* FOOTER */
@@ -202,6 +204,7 @@ body {
     grid-row: 2;
     width: 120%;
     justify-self: end;
+    margin-right: -18rem;
   }
 
   /* ---------- PHONES SECTION ---------- */
@@ -209,16 +212,20 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 6rem 8rem;
+    padding: 0rem 8rem;
+    height: 50vh;;
   }
 
   .phones-image {
     margin: 0;
-    width: 100%;
+    margin-top: -6rem;
+    width: max(100%, 200px)
+    
   }
 
   .phones-text {
     padding-left: 4rem;
+    margin-top: -10em;
   }
 
   /* ---------- LAPTOP SECTION ---------- */
@@ -231,6 +238,7 @@ body {
 
   .laptop .section-image {
     width: 120%;
+    margin-left: -20rem;
   }
 
   /* ---------- FOOTER ---------- */
