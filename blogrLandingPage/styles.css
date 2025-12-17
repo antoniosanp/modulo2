@@ -1,0 +1,251 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --red: hsl(356, 100%, 66%);
+  --dark-blue: hsl(208, 49%, 24%);
+  --gray: hsl(207, 13%, 34%);
+  --light-gray: hsl(240, 2%, 79%);
+  --white: #fff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--gray);
+}
+
+/* HERO */
+.hero {
+  background:
+    url("assets/bg-pattern-intro-mobile.svg"),
+    linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 1.5rem 4rem;
+  border-bottom-left-radius: 100px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.hero-content p {
+  margin: 1rem 0 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+}
+
+.primary {
+  background: white;
+  color: var(--red);
+}
+
+.secondary {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+/* SECTIONS */
+.section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.section h2 {
+  color: var(--dark-blue);
+  margin-bottom: 2rem;
+}
+
+.section-image {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.text-block h3 {
+  color: var(--dark-blue);
+  margin-bottom: 0.5rem;
+}
+
+.text-block p {
+  margin-bottom: 2rem;
+}
+
+/* PHONES SECTION */
+.phones {
+  background: linear-gradient(
+    135deg,
+    hsl(237, 17%, 21%),
+    hsl(237, 23%, 32%)
+  );
+  color: white;
+  border-radius: 0 100px 0 100px;
+  padding-top: 6rem;
+}
+
+.phones-image {
+  width: 100%;
+  margin-top: -10rem;
+}
+
+.phones-text h2 {
+  margin-top: 2rem;
+}
+
+/* FOOTER */
+.footer {
+  background: hsl(240, 10%, 16%);
+  color: white;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.footer-logo {
+  margin-bottom: 2rem;
+}
+
+.footer-group {
+  margin-bottom: 2rem;
+}
+
+.footer-group h4 {
+  margin-bottom: 1rem;
+}
+
+.footer-group a {
+  display: block;
+  color: var(--light-gray);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+
+  /* ---------- GENERAL ---------- */
+  .section {
+    text-align: left;
+    padding: 6rem 8rem;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    background:
+      url("assets/bg-pattern-intro-desktop.svg"),
+      linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: left center;
+    padding: 3rem 8rem 6rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  /* ---------- EDITOR SECTION ---------- */
+.editor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 4rem;
+    align-items: center;
+  }
+
+  .editor h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .editor .text-block {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .editor .section-image {
+    grid-column: 2;
+    grid-row: 2;
+    width: 120%;
+    justify-self: end;
+  }
+
+  /* ---------- PHONES SECTION ---------- */
+  .phones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 6rem 8rem;
+  }
+
+  .phones-image {
+    margin: 0;
+    width: 100%;
+  }
+
+  .phones-text {
+    padding-left: 4rem;
+  }
+
+  /* ---------- LAPTOP SECTION ---------- */
+  .laptop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .laptop .section-image {
+    width: 120%;
+  }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+    padding: 4rem 8rem;
+  }
+
+  .footer-logo {
+    margin: 0;
+  }
+
+  .footer-group {
+    margin: 0;
+  }
+}
